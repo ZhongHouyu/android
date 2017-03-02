@@ -18,7 +18,7 @@ public class RetrofitHelper {
     private static RetrofitHelper instance = null;
     private Retrofit mretrofit = null;
     public static RetrofitHelper getInstance(Context context){
-        if(context == null){
+        if(instance == null){
             instance = new RetrofitHelper(context);
         }
         return instance;
